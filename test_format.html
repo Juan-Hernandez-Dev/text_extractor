@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulario de Inscripción</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+  <!-- Contenedor del formulario -->
+  <main class="flex-grow container mx-auto p-6">
+    <div class="bg-white rounded-lg shadow-lg p-8">
+      <h2 class="text-2xl font-semibold text-gray-800 mb-6">Formulario de Inscripción</h2>
+      <form action="#" method="post" class="space-y-8">
+
+        <!-- Decanato / Parroquia / Centro -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <label for="decanato" class="block text-sm font-medium text-gray-700 uppercase">Decanato</label>
+            <input type="text" id="decanato" name="decanato"
+                   class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+          </div>
+          <div>
+            <label for="parroquia" class="block text-sm font-medium text-gray-700 uppercase">Parroquia</label>
+            <input type="text" id="parroquia" name="parroquia"
+                   class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+          </div>
+          <div>
+            <label for="centro_catequesis" class="block text-sm font-medium text-gray-700 uppercase">Centro de Catequesis</label>
+            <input type="text" id="centro_catequesis" name="centro_catequesis"
+                   class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+          </div>
+        </section>
+
+        <!-- Datos del Niño -->
+        <section class="space-y-4">
+          <h3 class="text-xl font-semibold text-gray-800">Datos del Niño</h3>
+          <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+            <div>
+              <label for="nombre" class="block text-sm font-medium text-gray-700 uppercase">Nombre</label>
+              <input type="text" id="nombre" name="nombre"
+                     class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+            </div>
+            <div>
+              <label for="apellido_materno" class="block text-sm font-medium text-gray-700 uppercase">Apellido Materno</label>
+              <input type="text" id="apellido_materno" name="apellido_materno"
+                     class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+            </div>
+            <div>
+              <label for="apellido_paterno" class="block text-sm font-medium text-gray-700 uppercase">Apellido Paterno</label>
+              <input type="text" id="apellido_paterno" name="apellido_paterno"
+                     class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+            </div>
+            <div>
+              <label for="edad" class="block text-sm font-medium text-gray-700 uppercase">Edad</label>
+              <input type="number" id="edad" name="edad"
+                     class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div>
+              <label for="grado_escolar" class="block text-sm font-medium text-gray-700 uppercase">Grado Escolar</label>
+              <input type="text" id="grado_escolar" name="grado_escolar"
+                     class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+            </div>
+            <div>
+              <label for="acta_nacimiento" class="block text-sm font-medium text-gray-700 uppercase">Acta de Nacimiento</label>
+              <input type="text" id="acta_nacimiento" name="acta_nacimiento"
+                     class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div>
+              <label for="fe_bautismo" class="block text-sm font-medium text-gray-700 uppercase">Fecha de Bautismo</label>
+              <input type="date" id="fe_bautismo" name="fe_bautismo"
+                     class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+            </div>
+            <div>
+              <label for="acta_primera_comunion" class="block text-sm font-medium text-gray-700 uppercase">Acta de Primera Comunión</label>
+              <input type="text" id="acta_primera_comunion" name="acta_primera_comunion"
+                     class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+            </div>
+          </div>
+        </section>
+
+        <!-- Datos del Titular(es) -->
+        <section class="space-y-4">
+          <h3 class="text-xl font-semibold text-gray-800">Datos del Titular(es)</h3>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div>
+              <label for="nombre_titular_1" class="block text-sm font-medium text-gray-700 uppercase">Titular 1 (nombre)</label>
+              <input type="text" id="nombre_titular_1" name="nombre_titular_1"
+                     class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+            </div>
+            <div>
+              <label for="telefono_titular_1" class="block text-sm font-medium text-gray-700 uppercase">Titular 1 (teléfono)</label>
+              <input type="tel" id="telefono_titular_1" name="telefono_titular_1"
+                     class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+            </div>
+            <div>
+              <label for="nombre_titular_2" class="block text-sm font-medium text-gray-700 uppercase">Titular 2 (nombre)</label>
+              <input type="text" id="nombre_titular_2" name="nombre_titular_2"
+                     class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+            </div>
+            <div>
+              <label for="telefono_titular_2" class="block text-sm font-medium text-gray-700 uppercase">Titular 2 (teléfono)</label>
+              <input type="tel" id="telefono_titular_2" name="telefono_titular_2"
+                     class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+            </div>
+          </div>
+          <div>
+            <label for="vive_con" class="block text-sm font-medium text-gray-700 uppercase">El niño vive con</label>
+            <input type="text" id="vive_con" name="vive_con"
+                   class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+          </div>
+        </section>
+
+        <!-- Información de Catequesis -->
+        <section class="space-y-4">
+          <h3 class="text-xl font-semibold text-gray-800">Información de Catequesis</h3>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div>
+              <label for="parroquia_pertenece" class="block text-sm font-medium text-gray-700 uppercase">¿A qué parroquia pertenece?</label>
+              <input type="text" id="parroquia_pertenece" name="parroquia_pertenece"
+                     class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+            </div>
+            <div>
+              <label for="ya_estuvo_catequesis" class="block text-sm font-medium text-gray-700 uppercase">¿Ya estuvo en catequesis? ¿Dónde?</label>
+              <input type="text" id="ya_estuvo_catequesis" name="ya_estuvo_catequesis"
+                     class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+            </div>
+          </div>
+        </section>
+
+        <!-- Prácticas de Vida Cristiana -->
+        <section class="space-y-4">
+          <h3 class="text-xl font-semibold text-gray-800">Prácticas de Vida Cristiana</h3>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 uppercase">¿Cuenta con su boleta?</label>
+              <div class="mt-1 flex space-x-6">
+                <label class="inline-flex items-center">
+                  <input type="radio" name="asiste_a_misa" value="si" class="form-radio text-blue-600"/> <span class="ml-2">Sí</span>
+                </label>
+                <label class="inline-flex items-center">
+                  <input type="radio" name="asiste_a_misa" value="no" class="form-radio text-blue-600"/> <span class="ml-2">No</span>
+                </label>
+                <label class="inline-flex items-center">
+                  <input type="radio" name="asiste_a_misa" value="a veces" class="form-radio text-blue-600"/> <span class="ml-2">A veces</span>
+                </label>
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 uppercase">¿Asiste a misa dominical?</label>
+              <div class="mt-1 flex space-x-6">
+                <label class="inline-flex items-center">
+                  <input type="radio" name="asiste_a_misa" value="si" class="form-radio text-blue-600"/> <span class="ml-2">Sí</span>
+                </label>
+                <label class="inline-flex items-center">
+                  <input type="radio" name="asiste_a_misa" value="no" class="form-radio text-blue-600"/> <span class="ml-2">No</span>
+                </label>
+                <label class="inline-flex items-center">
+                  <input type="radio" name="asiste_a_misa" value="a veces" class="form-radio text-blue-600"/> <span class="ml-2">A veces</span>
+                </label>
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 uppercase">¿Reza?</label>
+              <div class="mt-1 flex space-x-6">
+                <label class="inline-flex items-center">
+                  <input type="radio" name="reza" value="si" class="form-radio text-blue-600"/> <span class="ml-2">Sí</span>
+                </label>
+                <label class="inline-flex items-center">
+                  <input type="radio" name="reza" value="no" class="form-radio text-blue-600"/> <span class="ml-2">No</span>
+                </label>
+                <label class="inline-flex items-center">
+                  <input type="radio" name="reza" value="a veces" class="form-radio text-blue-600"/> <span class="ml-2">A veces</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Comentarios y Catequista -->
+        <section class="space-y-4">
+          <div>
+            <label for="comentarios" class="block text-sm font-medium text-gray-700 uppercase">Comentarios</label>
+            <textarea id="comentarios" name="comentarios" rows="4"
+                      class="bg-gray-100 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
+          </div>
+          <div>
+            <label for="nombre_catequista" class="block text-sm font-medium text-gray-700 uppercase">Catequista que inscribe</label>
+            <input type="text" id="nombre_catequista" name="nombre_catequista"
+                   class="bg-gray-100 p-2 mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"/>
+          </div>
+        </section>
+
+        <!-- Botón de envío -->
+        <div class="pt-6 text-right">
+          <button type="submit"
+                  class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="bg-gray-100 text-center py-4 text-sm text-gray-500">
+    © 2025 Nombre de la Organización. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
